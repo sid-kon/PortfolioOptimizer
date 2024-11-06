@@ -4,11 +4,6 @@ numpy
 scipy
 plotly
 matplotlib
-seaborn
-streamlit 
-matplotlib.pyplot 
-
+seaborn 
 yfinance 
 datetime 
-plotly.graph_objects 
-plotly.subplots 
