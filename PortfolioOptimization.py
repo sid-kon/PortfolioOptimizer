@@ -392,7 +392,11 @@ def mathematical_optimization_tab():
 
 def main():
     st.title('Portfolio Analysis Dashboard')
-    
+    st.sidebar.title("Portfolio Optimizer")
+    with st.sidebar:
+        st.write("Created by:")
+        linkedin_url = "https://www.linkedin.com/in/siddharth-kondubhatla-7603031ba/"
+        st.markdown(f'<a href="{linkedin_url}" target="_blank" style="text-decoration: none; color: inherit;"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="25" height="25" style="vertical-align: middle; margin-right: 10px;">Siddharth Kondubhatla</a>', unsafe_allow_html=True)
     tab1, tab2, tab3, tab4 = st.tabs([
         "Portfolio Creation",
         "Sharpe Ratio Calculator",
@@ -414,3 +418,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
